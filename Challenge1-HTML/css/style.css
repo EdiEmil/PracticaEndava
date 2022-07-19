@@ -1,0 +1,59 @@
+.logo{
+    display: flex;
+}
+.titlu{
+    padding-top: 60px;
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.poza_principala > img{
+    width: 100%;
+    height: auto;
+}
+.navigatia{
+    overflow: hidden;
+    background-color: grey; 
+}
+.navigatia a{
+    float: left;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.navigatia a:hover {
+    font-weight: bold;
+}
+.footer{
+    margin-top: auto;
+   
+    width: 100%;
+    background-color: grey;
+    color: white;
+    height: auto;
+    padding: 25px;
+    
+}
+
+.footer > p{
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.footer > p > a{
+    
+    text-decoration: none;
+}
+
+.text-studii{
+    font-family: sans-serif;
+}
+
+.text-experienta{
+    font-family: sans-serif;
+}
+
+.text-hobby{
+    font-family: sans-serif;
+}
