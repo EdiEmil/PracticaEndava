@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login Form</title>
+</head>
+<body>
+    <div class="loginDiv">
+        <form name="loginForm" onsubmit="mySubmitFunction(event)">
+            <table>
+                <tr>
+                    <td>Username:</td>
+                    <td><input type="text" name="username" oninput="userVerification()"></td>
+                    <td id="messageUser"></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name="password" oninput="passwordVerification()"></td>
+                    <td id="messagePassword"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <!-- <td><button type="button" name="login" onclick="buttonVerification()">Login</button></td> -->
+                    <td><input type="submit" name="login" value="Login"></td>
+                </tr>
+            </table>
+            
+        </form>
+    </div>
+    <script src="js/validation.js"></script>
+</body>
+</html>
