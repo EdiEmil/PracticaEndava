@@ -29,7 +29,7 @@
 .footer{
     margin-top: auto;
    
-    width: 100%;
+    width: auto;
     background-color: grey;
     color: white;
     height: auto;
@@ -50,6 +50,12 @@
     font-family: sans-serif;
 }
 
+.text-studii{
+    background-image: url("../img/study-image.jpg") ;
+    background-size: cover;
+    height: 1000px;
+}
+
 .text-experienta{
     font-family: sans-serif;
 }
@@ -63,4 +69,13 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.container-video{
+    padding: 14px 16px;
+    
+}
+
+.container-video > video{
+    border: solid black;
 }
