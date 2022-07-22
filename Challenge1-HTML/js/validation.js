@@ -35,14 +35,15 @@ function passwordVerification()
 
 }
 
-function mySubmitFunction(event){
-    event.prevenDefault();
-    try{
-        userVerification();
-    } catch(event){
-        throw new Error(event.messageUser);
-    }
-    return false;
+function mySubmitFunction(){
+   var username = document.getElementById("username").value;
+   var password = document.getElementById("password").value;
+   if(username == "admin" && password == "parola"){
+    window.open("index.html");
+   }else{
+    alert("Username sau parola incorecte");
+   }
+
 }
 
 

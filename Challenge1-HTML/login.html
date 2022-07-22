@@ -13,12 +13,12 @@
             <table>
                 <tr>
                     <td>Username:</td>
-                    <td><input type="text" name="username" oninput="userVerification()"></td>
+                    <td><input type="text" name="username" id="username" oninput="userVerification()"></td>
                     <td id="messageUser"></td>
                 </tr>
                 <tr>
                     <td>Password:</td>
-                    <td><input type="password" name="password" oninput="passwordVerification()"></td>
+                    <td><input type="password" name="password" id="password" oninput="passwordVerification()"></td>
                     <td id="messagePassword"></td>
                 </tr>
                 <tr>
@@ -32,7 +32,7 @@
                     <td><input type="submit" name="login" value="Login"></td>
                 </tr>
             </table>
-            
+            <p>Username: admin, password: parola</p>
         </form>
     </div>
     <script src="js/validation.js"></script>
