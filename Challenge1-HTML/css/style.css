@@ -35,7 +35,7 @@
     background-color: grey;
     color: white;
     height: auto;
-    padding: 25px;
+    padding: 14px 16px;
     
 }
 
@@ -149,10 +149,12 @@
         height: auto;
     }
 
-    .footer{
+    
+   
+    .pagina-principala{
         width: 100%;
-        height: auto;
     }
+
 }
     
 
