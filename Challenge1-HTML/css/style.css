@@ -119,6 +119,7 @@
     }
 
     .navigatia a{
+        width: 100%;
         color: white;
         padding: 14px 16px;
         text-decoration: none;
@@ -137,6 +138,11 @@
         right: 0;
         top: 0;   
     }
+    .container-poza{
+        width: 100%;
+        height: auto;
+    }
+
 
     .container-video video{
         width: 100%;
