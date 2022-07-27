@@ -101,7 +101,7 @@
     
 }
 
-@media screen and (max-width:520px) {
+@media screen and (max-width:1080px) {
     .logo{
         padding: 14px 16px;
         display: flex;
