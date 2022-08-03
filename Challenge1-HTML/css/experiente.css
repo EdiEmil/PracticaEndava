@@ -1,0 +1,40 @@
+#experienteContainer{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.experienteChildContainer{
+    display: block;
+    width: 620.33px;
+    height: auto;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+    background-color: teal;
+}
+
+.experienteChildContainer h3 {
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+    
+}
+
+.experienteChildContainer p {
+    font-family: sans-serif;
+
+}
+
+@media screen and (max-width:1080px) {
+   #experienteContainer{
+    display: inline-block;
+    width: 100%;
+   }
+
+   .experienteChildContainer{
+    display: block;
+    width: 100%;
+   }
+    
+}

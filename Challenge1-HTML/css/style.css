@@ -114,6 +114,10 @@
         font-size: x-small;
     
     }
+
+    .navigatia{
+        width: 100%;
+    }
     .navigatia #links{
         display: none;
     }
@@ -154,7 +158,10 @@
     .pagina-principala{
         width: 100%;
     }
-
+    
+    .footer{
+        width: 100%;
+    }
 }
     
 
