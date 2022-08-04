@@ -4,6 +4,7 @@ const experiente = [
         name:"Internship backend",
         description: "Descriere test1",
         startDate: "Inceput la data de: 05/05/2022",
+        realDate: "2022/05/05",
         endDate: "Terminat la data de: 05/06/2022",
     },
     {
@@ -11,6 +12,7 @@ const experiente = [
         name:"Voluntariat Festivalul Medieval",
         description: "Descriere test2",
         startDate: "Inceput la data de: 04/08/2019",
+        realDate:"2019/08/04",
         endDate: "Terminat la data de: 18/08/2019",
     },
     {
@@ -18,6 +20,7 @@ const experiente = [
         name:"Voluntariat",
         description: "Descriere test3",
         startDate:"Inceput la data de: 04/07/2021",
+        realDate:"2021/07/04",
         endDate:"Terminat la data de: 04/08/2021",
     },
     {
@@ -25,11 +28,24 @@ const experiente = [
         name:"Voluntariat_nou",
         description: "Descriere test4",
         startDate:"Inceput la data de: 04/07/2022",
+        realDate:"2022/07/04",
         endDate:"Terminat la data de: 04/08/2022",
     }
 
 
 ];
+
+console.log(experiente.sort(byDate));
+
+function byDate(a,b){
+    if(a.realDate > b.realDate){
+        return 1;
+    }else if (b.realDate > a.realDate){
+        return -1;
+    }else{
+        return 0;
+    }
+}
 
 function generateExperiencesCard(experienta){
    const experientaCard = document.createElement("div"); //creeam acest div pentru a avea unde sa puneam in html obiectele pe care vrem sa le afisam
