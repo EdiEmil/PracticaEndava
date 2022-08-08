@@ -1,0 +1,16 @@
+#container-cifru{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.box{
+    padding: 14px 16px;
+    border: 2px solid black;
+}
+
+#btnCifru{
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 3px 4px;
+}
