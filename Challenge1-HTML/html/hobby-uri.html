@@ -5,26 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>CVSzebeniEmilEduard//hobby</title>
 <body>
     
         <header>
             <div class="logo">
                 <a href="../index.html">
-                    <img src="../img/logo.jpg" alt="Logo">
+                    <picture>
+                        <source srcset="../img/logo_mobile.jpg" media="(max-width:834px)" alt="Poza CV">
+                        <source srcset="../img/logo.jpg">
+                        <img src="../img/logo.jpg" alt="Logo">
+                    </picture>
+                    
                 </a> 
                 <div class="titlu">
                     <h1>Szebeni Emil Eduard</h1>
                 </div>
             </div>
             <nav class="navigatia">
-                <a href="../index.html">Pagina principala</a>
-                <a href="studii.html">Studii</a>
-                <a href="experienta.html">Experienta</a>
-                <a href="hobby-uri.html">Hobby</a>
-                <a href="contact.html">Contact</a>
-                <a href="experiente.html">Experiente</a>
-        </nav>
+                <div id="links">
+                    <a href="../index.html">Pagina principala</a>
+                    <a href="studii.html">Studii</a>
+                    <a href="experienta.html">Experienta</a>
+                    <a href="hobby-uri.html">Hobby</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="experiente.html">Experiente</a>
+                </div>
+            </nav>
+            <div class="navigatia-mobile">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()" >
+                    <i class="fa fa-bars"></i>
+                </a>   
+            </div>  
         </header>
         <main>
             <div class="text-hobby">
@@ -43,5 +56,6 @@
             
         </div>
     </footer>
+    <script src="../js/hamburger-menu.js"></script>
 </body>
 </html>

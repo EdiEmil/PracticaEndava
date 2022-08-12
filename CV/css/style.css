@@ -37,15 +37,28 @@
     text-align: center;
     font-family: sans-serif;
 } */
+.container-page{
+    background: #c8d8e4 ;
+}
+.container-poza-descriere{
+    display: flex;
+}
+
+.poza_principala{
+    width: 100%;
+    
+}
 
 .poza_principala > img{
-    width: 100%;
+   width: 100%;
     height: auto;
+    
+    
 }
 .navigatia{
     margin-bottom: 10px;
     overflow: hidden;
-    background-color: rgb(25, 134, 134); 
+    background-color: #2b6777; 
 }
 .navigatia a{
    
@@ -59,13 +72,23 @@
 .navigatia a:hover {
     font-weight: bold;
 }
+
+.descriere{
+    font-family: sans-serif;
+    display: inline-block;
+}
+
+.descriere p{
+    
+    font-family: sans-serif;
+}
 .footer{
     margin-top: auto;
    
     width: auto;
-    background-color: grey;
+    background: #2b6777;
     color: white;
-    height: auto;
+    height: 100%;
     padding: 14px 16px;
     
 }
@@ -73,6 +96,7 @@
 .footer > p{
     font-family: sans-serif;
     text-decoration: none;
+    
 }
 .footer > p > a{
     
@@ -132,6 +156,22 @@
     
 } */
 
+.titlu-pagina h1{
+    text-align: center;
+}
+
+#createAccount{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.descriere{
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 100px;
+
+}
 @media screen and (max-width:1080px) {
     .logo{
         padding: 14px 16px;
@@ -168,7 +208,7 @@
         font-family: sans-serif;
     }
     .icon{
-        background: grey;
+        background: #2b6777;
         display: block;
         right: 0;
         top: 0;   

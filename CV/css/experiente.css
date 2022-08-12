@@ -1,0 +1,44 @@
+#experienteContainer{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+.experienteChildContainer{
+    display: block;
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    /* background-color: #2b6777; */
+    background-color: #c8d8e4;;
+    border-radius: 5px;
+}
+
+.experienteChildContainer h3 {
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+    
+}
+
+.experienteChildContainer p {
+    font-family: sans-serif;
+    margin-top: 25px;
+    margin-bottom: 4px;
+}
+
+@media screen and (max-width:1080px) {
+   #experienteContainer{
+    display: inline-block;
+    width: 100%;
+   }
+
+   .experienteChildContainer{
+    display: block;
+    width: 100%;
+   }
+    
+}

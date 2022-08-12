@@ -1,0 +1,150 @@
+body{
+    --color-primary:#009579;
+    --color-primary-dark:#007f67;
+    --color-secondary: #252c6a;
+    --color-error: #cc3333;
+    --color-success: #4bb544;
+    --border-radius: 4px;
+
+    margin: 0;
+    height: auto;
+    
+    display: block;
+    align-items: center;       
+    /* toatea astea pentru centrarea verticala si justify-content pentru centrarea orizontala */
+    justify-content: center; 
+    
+    font-size: 18px; 
+    /* asta au ca referinta toate locurile in care apare rem */
+    
+    /* background: url(background-image.jpg);
+    background-size: cover; */
+}
+
+/* .container{
+    width: 400px;
+    max-width: 400px;  max-width face ca pagina sa fie responsive in momentul in care display-ul se face mai mic  */
+    /* margin: 1rem; /* 1rem inseama o unitate din unitatea initiala adica 18px (font-size) */
+    /* padding: 2rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0, 0.2);   
+    border-radius: var(--border-radius);
+    background: #ffffff; */ 
+    /* toate proprietatile de aici sunt pentru a forma box-ul in care se afla login-ul */
+    /* display: flex;
+    flex-direction: column;
+} */
+ 
+.table{
+    width: 80%;
+    padding: 14px 25px;
+    margin-right: 100px;
+}
+.container,
+.form-input,
+.form-button{
+    font-weight: 500;
+    font-family: sans-serif;
+    
+}
+
+.form  > *:first-child{ /* se aplica doar pt primul copil adica pt h1, pentru a elimina marginea din partea de sus */
+   margin-top: 0;
+}
+
+.form > *:last-child{/* se aplica doar pt ultimul p */
+    margin-bottom: 0;
+}
+
+.form-title{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.form-message{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form-message-succes{
+    color: var(--color-success);
+}
+
+.form-message-error{
+    color: var(--color-error);
+}
+
+.form-input-group{
+    margin-bottom: 1rem;/* spatiu intre fiecare input field si buton */
+    
+}
+
+.form-input{
+    display: block;
+    width: 100%;
+    padding: 0.75rem;/* normal padding-ul nu exista aici si asa facem ca box-ul de username si parola sa fie mai mari, altfel inaltimea este egala cu scrisul de la placeholder */
+    box-sizing: border-box;/* face a inputul sa se comporte ca un box si atunci se aplica paddingul la fel si in stanga si in dreaptea(nu paddingul de mai sus) */
+    border-radius: var(--border-radius);
+    border: 1px solid #dddddd; /* o nuanta de gri mai inchisa */
+    background: #eeeeee;/* o nuanta de gri mai deschisa */
+    outline: none; /* asemanator cu un hyper-link exsta o bordura albastra cand se da click pe un input si astel se elimina */
+    transition: background 0.8s, border-color 0.2s; /* cand dam click pe un input se face o tranzitie la bordura si culoarea backgroun-ului(urmatoarele 3 linii de cod) si aici setam timpul in care se executa schimbarea */
+    
+    
+}
+
+.form-input:focus{
+    border-color: var(--color-primary); 
+    /* aici schimbam culoarea de la bordura sa fie verde si background-ul alb cand dam click pe input; */
+    background: #ffffff;
+}
+
+.form-input-error{
+    color: var(--color-error);
+    border-color: var(--color-error); 
+    /* de aici selectam doar culorile, locul in care se aplica se face in javascript */
+}
+
+.form-input-error-message{
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--color-error);
+}
+
+.form-button{
+    width: 30%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #ffffff;
+    border: none;
+    border-radius: var(--border-radius);
+    outline: none;
+    cursor: pointer;/* din sageata se schimba in manuta */
+    background: var(--color-primary);
+    
+
+}
+
+.form-button:hover{
+    background: var(--color-primary-dark);
+}
+
+.form-button:active{
+    transform: scale(0.98);
+    /* in momentul in care se da click butonul se face putin mai mic sa ofere efectul de apasat*/
+}
+
+.form-text{
+    text-align: center;
+    /* partea asta se refera la optiunile de: "nu ai un cont" si "ai uitat parola" */
+}
+
+.form-link{
+    color: var(--color-secondary);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form-link:hover{
+    text-decoration: underline;
+}
